@@ -1,236 +1,989 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bankers Connect | India’s First Banking Expertise Exchange Platform</title>
-  <meta name="description" content="Bankers Connect is India’s First Banking Expertise Exchange Platform connecting experienced bankers, mentors, trainers, consultants and institutions through a single professional ecosystem." />
-  <link rel="stylesheet" href="styles.css" />
-<style>
-:root{
-  --navy:#062454; --blue:#0f5eb8; --gold:#d99a22; --orange:#ed7b18; --light:#f5f8fc; --ink:#14213d; --muted:#5c677d; --white:#fff;
-  --shadow: 0 14px 40px rgba(6,36,84,.12); --radius:24px;
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}.container{width:min(1160px,92%);margin:auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e7edf5}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);font-size:22px;letter-spacing:.5px}.brand em{display:block;font-style:normal;color:var(--gold);font-weight:800;margin-top:-6px}.brand-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;border:3px solid var(--gold)}.nav-links{display:flex;align-items:center;gap:22px}.nav-links a{text-decoration:none;color:var(--ink);font-weight:600;font-size:15px}.menu-toggle{display:none;background:none;border:0;font-size:30px;color:var(--navy)}.btn{border:0;border-radius:999px;background:var(--navy);color:#fff;padding:14px 24px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}.btn:hover{transform:translateY(-1px)}.btn-secondary{background:#fff;color:var(--navy);border:1px solid #cbd6e3}.btn-small{padding:10px 18px}.hero{padding:80px 0 56px;background:radial-gradient(circle at top right,#eaf3ff,transparent 38%),linear-gradient(180deg,#fff,#f6f9fd)}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:42px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--gold);font-weight:900;font-size:13px;margin:0 0 12px}.hero h1{font-size:58px;line-height:1.04;margin:0;color:var(--navy);letter-spacing:-2px}.hero-subtitle{font-size:21px;color:var(--muted);max-width:700px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}.trust-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.trust-row span{background:#fff;border:1px solid #dfe7f1;border-radius:999px;padding:8px 14px;font-weight:700;color:var(--navy)}.hero-card{background:#fff;border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);border:1px solid #dce7f4}.hero-card img{width:100%;display:block;border-radius:18px}.section{padding:76px 0}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}h2{font-size:38px;line-height:1.18;margin:0 0 16px;color:var(--navy)}h3{line-height:1.2;color:var(--navy)}p{color:var(--muted)}.highlight-box,.quick-card,.cta-card{background:linear-gradient(135deg,#062454,#0b438b);border-radius:var(--radius);padding:34px;color:#fff;box-shadow:var(--shadow)}.highlight-box h3,.highlight-box p,.quick-card h2,.quick-card p,.cta-card h2,.cta-card p{color:#fff}.modules-section{background:var(--light)}.section-heading{text-align:center;max-width:780px;margin:0 auto 42px}.modules-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.module-card{background:#fff;border-radius:22px;padding:28px;box-shadow:var(--shadow);border:1px solid #e4ebf3;min-height:245px}.module-card span{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-size:22px;font-weight:900;margin-bottom:18px}.module-card h3{font-size:22px;margin:0 0 10px}.module-card.blue{border-color:#b8d5fb}.module-card.green{border-color:#bde7cb}.module-card.purple{border-color:#d5c7f4}.module-card.orange{border-color:#ffd3b3}.module-card.teal{border-color:#bee8ed}.module-card.red{border-color:#f3c6c6}.module-card.indigo{border-color:#c8ccff}.module-card.pink{border-color:#f7c5da}.module-card.cyan{border-color:#bfe7ff}.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.audience-grid div{border:1px solid #e3ebf5;border-radius:20px;padding:24px;background:#fff;box-shadow:0 8px 22px rgba(6,36,84,.06)}.audience-grid strong{font-size:19px;color:var(--navy)}.quick-register-section{background:#fff}.quick-card{display:flex;justify-content:space-between;align-items:center;gap:28px}.feature-list{list-style:none;margin:0;padding:0}.feature-list li{margin:12px 0;padding:16px 18px;background:#fff;border-radius:16px;border-left:5px solid var(--gold);box-shadow:0 8px 20px rgba(6,36,84,.08);font-weight:700}.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.roadmap div{background:#fff;border-radius:22px;padding:28px;border-top:6px solid var(--gold);box-shadow:var(--shadow)}.roadmap span{font-weight:900;color:var(--orange)}.cta-section{background:linear-gradient(180deg,#f6f9fd,#fff)}.cta-card{text-align:center}.footer{background:var(--navy);padding:40px 0;color:#fff}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}.footer h3,.footer p,.footer strong{color:#fff}.footer a{display:block;color:#dceaff;text-decoration:none;margin:6px 0}.modal{position:fixed;inset:0;background:rgba(3,15,35,.65);display:none;place-items:center;z-index:50;padding:18px}.modal.open{display:grid}.modal-content{width:min(560px,100%);background:#fff;border-radius:24px;padding:32px;position:relative;box-shadow:0 25px 70px rgba(0,0,0,.3)}.modal-close{position:absolute;right:18px;top:14px;background:transparent;border:0;font-size:34px;cursor:pointer;color:var(--navy)}form{display:grid;gap:14px}label{font-weight:800;color:var(--navy)}input,select{width:100%;padding:13px 14px;margin-top:6px;border:1px solid #cbd6e3;border-radius:12px;font:inherit}.checkbox{display:flex;gap:10px;font-weight:600;color:var(--muted)}.checkbox input{width:auto;margin-top:5px}.form-note{font-weight:800;color:green}.career-section{background:var(--light)}
-@media(max-width:900px){.menu-toggle{display:block}.nav-links{position:absolute;left:0;right:0;top:76px;background:#fff;padding:20px;display:none;flex-direction:column;align-items:flex-start;border-bottom:1px solid #e7edf5}.nav-links.open{display:flex}.hero-grid,.two-col,.footer-grid{grid-template-columns:1fr}.hero h1{font-size:42px}.modules-grid,.audience-grid,.roadmap{grid-template-columns:1fr}.quick-card{display:block}.quick-card .btn{margin-top:20px}}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Bankers Connect | India’s First Banking Expertise Exchange Platform
+    </title>
+    <meta
+      name="description"
+      content="Bankers Connect is India’s First Banking Expertise Exchange Platform connecting experienced bankers, mentors, trainers, consultants and institutions through a single professional ecosystem."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      :root {
+        --navy: #062454;
+        --blue: #0f5eb8;
+        --gold: #d99a22;
+        --orange: #ed7b18;
+        --light: #f5f8fc;
+        --ink: #14213d;
+        --muted: #5c677d;
+        --white: #fff;
+        --shadow: 0 14px 40px rgba(6, 36, 84, 0.12);
+        --radius: 24px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: #fff;
+        line-height: 1.6;
+      }
+      .container {
+        width: min(1160px, 92%);
+        margin: auto;
+      }
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid #e7edf5;
+      }
+      .nav {
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: var(--navy);
+        font-size: 22px;
+        letter-spacing: 0.5px;
+      }
+      .brand em {
+        display: block;
+        font-style: normal;
+        color: var(--gold);
+        font-weight: 800;
+        margin-top: -6px;
+      }
+      .brand-icon {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--navy);
+        color: #fff;
+        font-weight: 900;
+        border: 3px solid var(--gold);
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: var(--ink);
+        font-weight: 600;
+        font-size: 15px;
+      }
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: 0;
+        font-size: 30px;
+        color: var(--navy);
+      }
+      .btn {
+        border: 0;
+        border-radius: 999px;
+        background: var(--navy);
+        color: #fff;
+        padding: 14px 24px;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow);
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .btn-secondary {
+        background: #fff;
+        color: var(--navy);
+        border: 1px solid #cbd6e3;
+      }
+      .btn-small {
+        padding: 10px 18px;
+      }
+      .hero {
+        /* padding: 80px 0 56px; */
+        padding: 30px 0 30px;
+        background:
+          radial-gradient(circle at top right, #eaf3ff, transparent 38%),
+          linear-gradient(180deg, #fff, #f6f9fd);
+          background-image:url('Bankers-Connect-Banner-Img-4.jpg'), linear-gradient(180deg, #fff, #f6f9fd);
+          background-size: cover;
+          background-position: bottom;
+          background-repeat: no-repeat, no-repeat;
+      }
+      .hero-grid {
+        /* display: grid; */
+        /* grid-template-columns: 1.03fr 0.97fr; */
+        /* gap: 42px; */
+        align-items: center;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--gold);
+        font-weight: 900;
+        font-size: 13px;
+        margin: 0 0 12px;
+        color: #ffce70;
+      }
+      .hero h1 {
+        /* font-size: 58px; */
+        font-size: 50px;
+        max-width: 700px; /* new added */
+        line-height: 1.04;
+        margin: 0;
+        color: var(--navy);
+        letter-spacing: -2px;
+        color:var(--white);
+      }
+      .hero-subtitle {
+        font-size: 21px;
+        color: var(--muted);
+        max-width: 700px;
+         color:var(--white);
+      }
+      .hero-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+      }
+      .trust-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      .trust-row span {
+        background: #fff;
+        border: 1px solid #dfe7f1;
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-weight: 700;
+        color: var(--navy);
+      }
+      .hero-card {
+        background: #fff;
+        border-radius: var(--radius);
+        padding: 14px;
+        box-shadow: var(--shadow);
+        border: 1px solid #dce7f4;
+      }
+      .hero-card img {
+        width: 100%;
+        display: block;
+        border-radius: 18px;
+      }
+      .section {
+        padding: 76px 0;
+      }
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        align-items: center;
+      }
+      h2 {
+        font-size: 38px;
+        line-height: 1.18;
+        margin: 0 0 16px;
+        color: var(--navy);
+      }
+      h3 {
+        line-height: 1.2;
+        color: var(--navy);
+      }
+      p {
+        color: var(--muted);
+      }
+      .highlight-box,
+      .quick-card,
+      .cta-card {
+        background: linear-gradient(135deg, #062454, #0b438b);
+        border-radius: var(--radius);
+        padding: 34px;
+        color: #fff;
+        box-shadow: var(--shadow);
+      }
+      .highlight-box h3,
+      .highlight-box p,
+      .quick-card h2,
+      .quick-card p,
+      .cta-card h2,
+      .cta-card p {
+        color: #fff;
+      }
+      .modules-section {
+        background: var(--light);
+      }
+      .section-heading {
+        text-align: center;
+        max-width: 780px;
+        margin: 0 auto 42px;
+      }
+      .modules-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .module-card {
+        background: #fff;
+        border-radius: 22px;
+        padding: 28px;
+        box-shadow: var(--shadow);
+        border: 1px solid #e4ebf3;
+        min-height: 245px;
+      }
+      .module-card span {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--navy);
+        color: #fff;
+        font-size: 22px;
+        font-weight: 900;
+        margin-bottom: 18px;
+      }
+      .module-card h3 {
+        font-size: 22px;
+        margin: 0 0 10px;
+      }
+      .module-card.blue {
+        border-color: #b8d5fb;
+      }
+      .module-card.green {
+        border-color: #bde7cb;
+      }
+      .module-card.purple {
+        border-color: #d5c7f4;
+      }
+      .module-card.orange {
+        border-color: #ffd3b3;
+      }
+      .module-card.teal {
+        border-color: #bee8ed;
+      }
+      .module-card.red {
+        border-color: #f3c6c6;
+      }
+      .module-card.indigo {
+        border-color: #c8ccff;
+      }
+      .module-card.pink {
+        border-color: #f7c5da;
+      }
+      .module-card.cyan {
+        border-color: #bfe7ff;
+      }
+      .audience-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .audience-grid div {
+        border: 1px solid #e3ebf5;
+        border-radius: 20px;
+        padding: 24px;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(6, 36, 84, 0.06);
+      }
+      .audience-grid strong {
+        font-size: 19px;
+        color: var(--navy);
+      }
+      .quick-register-section {
+        background: #fff;
+      }
+      .quick-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 28px;
+      }
+      .feature-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .feature-list li {
+        margin: 12px 0;
+        padding: 16px 18px;
+        background: #fff;
+        border-radius: 16px;
+        border-left: 5px solid var(--gold);
+        box-shadow: 0 8px 20px rgba(6, 36, 84, 0.08);
+        font-weight: 700;
+      }
+      .roadmap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .roadmap div {
+        background: #fff;
+        border-radius: 22px;
+        padding: 28px;
+        border-top: 6px solid var(--gold);
+        box-shadow: var(--shadow);
+      }
+      .who-can-join-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      .who-can-join-grid div {
+        background: linear-gradient(135deg, #062454, #0b438b);
+        border-radius: 22px;
+        padding: 5px 15px;
+        border-top: 6px solid var(--gold);
+        box-shadow: var(--shadow);
+      }
+      .who-can-join-grid div h3{
+         color: #ececec;
+         font-size: 16px;
+      }
+      .cta-section {
+        background: linear-gradient(180deg, #f6f9fd, #fff);
+      }
+      .cta-card {
+        text-align: center;
+      }
+      .footer {
+        background: var(--navy);
+        padding: 40px 0;
+        color: #fff;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        gap: 30px;
+      }
+      .footer h3,
+      .footer p,
+      .footer strong {
+        color: #fff;
+      }
+      .footer a {
+        display: block;
+        color: #dceaff;
+        text-decoration: none;
+        margin: 6px 0;
+      }
+      .modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(3, 15, 35, 0.65);
+        display: none;
+        place-items: center;
+        z-index: 50;
+        padding: 18px;
+      }
+      .modal.open {
+        display: grid;
+      }
+      .modal-content {
+        width: min(560px, 100%);
+        background: #fff;
+        border-radius: 24px;
+        padding: 32px;
+        position: relative;
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+      }
+      .modal-close {
+        position: absolute;
+        right: 18px;
+        top: 14px;
+        background: transparent;
+        border: 0;
+        font-size: 34px;
+        cursor: pointer;
+        color: var(--navy);
+      }
+      form {
+        display: grid;
+        gap: 14px;
+      }
+      label {
+        font-weight: 800;
+        color: var(--navy);
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 13px 14px;
+        margin-top: 6px;
+        border: 1px solid #cbd6e3;
+        border-radius: 12px;
+        font: inherit;
+      }
+      .checkbox {
+        display: flex;
+        gap: 10px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+      .checkbox input {
+        width: auto;
+        margin-top: 5px;
+      }
+      .form-note {
+        font-weight: 800;
+        color: green;
+      }
+      .career-section {
+        background: var(--light);
+      }
+      @media (max-width: 900px) {
+        .menu-toggle {
+          display: block;
+        }
+        .nav-links {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 76px;
+          background: #fff;
+          padding: 20px;
+          display: none;
+          flex-direction: column;
+          align-items: flex-start;
+          border-bottom: 1px solid #e7edf5;
+        }
+        .nav-links.open {
+          display: flex;
+        }
+        .hero-grid,
+        .two-col,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero h1 {
+          font-size: 42px;
+        }
+        .modules-grid,
+        .audience-grid,
+        .roadmap {
+          grid-template-columns: 1fr;
+        }
+        .quick-card {
+          display: block;
+        }
+        .quick-card .btn {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="#home" aria-label="Bankers Connect Home">
+          <span class="brand-icon">BC</span>
+          <span><strong>BANKERS</strong><em>CONNECT</em></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+        <div class="nav-links">
+          <!-- <a href="#modules">Modules</a> -->
+          <a href="#for-whom">Who Can Join</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#career">Career</a>
+          <a href="#contact">Contact</a>
+          <button class="btn btn-small open-register">Join Free</button>
+        </div>
+      </nav>
+    </header>
 
-</style>
-</head>
-<body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#home" aria-label="Bankers Connect Home">
-        <span class="brand-icon">BC</span>
-        <span><strong>BANKERS</strong><em>CONNECT</em></span>
-      </a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <div class="nav-links">
-        <!-- <a href="#modules">Modules</a> -->
-        <a href="#for-whom">Who Can Join</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#career">Career</a>
-        <a href="#contact">Contact</a>
-        <button class="btn btn-small open-register">Join Free</button>
-      </div>
-    </nav>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Welcome to Bankers Connect</p>
-          <h1>India’s First & Only Banking Expertise Exchange Platform</h1>
-          <p class="hero-subtitle">Join the curated community of bankers loaded with experience and expertise to enrich your profession, open a floodgate of career opportunities, and monetise your skill in training, content creation & consultation.
-             Founder membership by invite only – submit your profile here for curation.
-          </p>
-          <div class="hero-actions">
-            <button class="btn open-register">Join as Founding Member</button>
-            <a class="btn btn-secondary" href="#modules">Explore Platform</a>
+    <main id="home">
+      <!-- <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Welcome to Bankers Connect</p>
+            <h1>India’s First & Only Banking Expertise Exchange Platform</h1>
+            <p class="hero-subtitle">
+              Join the curated community of bankers loaded with experience and
+              expertise to enrich your profession, open a floodgate of career
+              opportunities, and monetise your skill in training, content
+              creation & consultation. 
+            </p>
+            <div class="hero-actions">
+              <button class="btn open-register">Join as Founding Member</button>
+              <a class="btn btn-secondary" href="#modules">Explore Platform</a>
+            </div>
+            <div class="trust-row">
+              <span>Expertise</span><span>Knowledge</span><span>Mentorship</span
+              ><span>Training</span><span>Career</span>
+            </div>
           </div>
-          <div class="trust-row">
-            <span>Expertise</span><span>Knowledge</span><span>Mentorship</span><span>Training</span><span>Career</span>
+          <div class="hero-card">
+            <img
+              src="assets/bankers-connect-infographic.png"
+              alt="Bankers Connect 9 Modules Infographic"
+            />
           </div>
         </div>
-        <div class="hero-card">
-          <img src="assets/bankers-connect-infographic.png" alt="Bankers Connect 9 Modules Infographic" />
+      </section> -->
+      <section class="hero" >
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Welcome to Bankers Connect</p>
+            <h1>India’s First & Only Banking Expertise Exchange Platform</h1>
+            <p class="hero-subtitle">
+              Join the curated community of bankers loaded with experience and
+              expertise to enrich your profession, open a floodgate of career
+              opportunities, and monetise your skill in training, content
+              creation & consultation. 
+            </p>
+            <div class="hero-actions">
+              <button class="btn open-register">Join as Founding Member</button>
+              <a class="btn btn-secondary" href="#modules">Explore Platform</a>
+            </div>
+            <div class="trust-row">
+              <span>Expertise</span><span>Knowledge</span><span>Mentorship</span
+              ><span>Training</span><span>Career</span>
+            </div>
+          </div>
+       
         </div>
-      </div>
-    </section>
+      </section>
+       <section  class="section roadmap-section">
+        <div class="container">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Phased Launch Strategy</p> -->
+            <h2>Membership Categories</h2>
+          </div>
+          <div class="roadmap">
+            <div>
+              <!-- <span>Phase 1</span> -->
+              <h3>Founding Members</h3>
+              <p>
+                By invitation and profile curation only. Show your interest and submit your profile if you are an active or ex CXO or from the top management of a bank/ Lending NBFC,/ Financial institution.
+              </p>
+            </div>
+            <div>
+              <!-- <span>Phase 2</span> -->
+              <h3>Premium Members</h3>
+              <p>
+                Complimentary premium access for a limited period and limited number of approved professionals.
+              </p>
+            </div>
+            <div>
+              <!-- <span>Phase 3</span> -->
+              <h3>Community Members</h3>
+              <p>
+               Join as a lifetime free member during the launch phase.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section class="section roadmap-section">
+        <div class="container">
+          <div class="section-heading">
+            <!-- <p class="eyebrow">Phased Launch Strategy</p> -->
+            <h2>As a member, you can</h2>
+          </div>
+          <div class="who-can-join-grid">
+            <div>
+              <!-- <span>Phase 1</span> -->
+              <h3>Expand your professional network</h3>
+              
+            </div>
+            <div>
+              <!-- <span>Phase 2</span> -->
+              <h3>Showcase your expertise and achievements</h3>
+              
+            </div>
+            <div>
+              <!-- <span>Phase 3</span> -->
+              <h3>Access consulting, advisory, and project opportunities</h3>
+              
+            </div>
+             <div>
+              <!-- <span>Phase 1</span> -->
+              <h3>Publish articles and thought leadership content</h3>
+              
+            </div>
+            <div>
+              <!-- <span>Phase 2</span> -->
+              <h3>Participate in industry forums and expert discussions</h3>
+              
+            </div>
+            <div>
+              <!-- <span>Phase 3</span> -->
+              <h3>Learn from experienced banking professionals</h3>
+              
+            </div>
+             <div>
+              <!-- <span>Phase 2</span> -->
+              <h3>Earn recognition and rewards for community contributions</h3>
+              
+            </div>
+            <div>
+              <!-- <span>Phase 3</span> -->
+              <h3>Monetize your knowledge through training, & consulting</h3>
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="intro section">
-      <div class="container two-col">
+      <section class="intro section">
+        <div class="container two-col">
+          <div>
+            <h2>Preserving, sharing and monetising banking experience</h2>
+            <p>
+              Bankers Connect is designed as a professional network where
+              serving bankers, retired bankers, consultants, trainers, mentors,
+              fintech professionals and institutions can collaborate, learn,
+              advise and grow.
+            </p>
+          </div>
+          <div class="highlight-box">
+            <h3>Why this platform?</h3>
+            <p>
+              Banking expertise is highly specialised, but often scattered. This
+              platform brings experience, opportunity, knowledge and
+              collaboration into one trusted ecosystem.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="modules" class="section modules-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Our Platform Ecosystem</p>
+            <h2>9 Powerful Modules</h2>
+          </div>
+          <div class="modules-grid">
+            <article class="module-card blue">
+              <span>1</span>
+              <h3>Expert Marketplace</h3>
+              <p>
+                Discover and engage verified banking experts by domain,
+                experience, expertise and location.
+              </p>
+            </article>
+            <article class="module-card green">
+              <span>2</span>
+              <h3>Knowledge Marketplace</h3>
+              <p>
+                Access articles, templates, case studies, whitepapers,
+                regulatory notes and banking artifacts.
+              </p>
+            </article>
+            <article class="module-card purple">
+              <span>3</span>
+              <h3>Mentorship Marketplace</h3>
+              <p>
+                Connect with experienced mentors for career, leadership and
+                domain-specific guidance.
+              </p>
+            </article>
+            <article class="module-card orange">
+              <span>4</span>
+              <h3>Training Marketplace</h3>
+              <p>
+                Explore subject-wise and sub-subject-specific courses, capsules,
+                workshops and primer modules.
+              </p>
+            </article>
+            <article class="module-card teal">
+              <span>5</span>
+              <h3>Consultation Marketplace</h3>
+              <p>
+                Seek expert advice for specific operational, regulatory,
+                technology or business issues.
+              </p>
+            </article>
+            <article class="module-card red">
+              <span>6</span>
+              <h3>Project Marketplace</h3>
+              <p>
+                Post and discover banking projects, find expert teams and
+                collaborate end-to-end.
+              </p>
+            </article>
+            <article class="module-card indigo">
+              <span>7</span>
+              <h3>Virtual Advisory Marketplace</h3>
+              <p>
+                Build advisory panels, review boards, virtual PMOs and secure
+                collaboration workspaces.
+              </p>
+            </article>
+            <article class="module-card pink">
+              <span>8</span>
+              <h3>Career & Opportunities Marketplace</h3>
+              <p>
+                Explore jobs, consulting, advisory, board and post-retirement
+                opportunities.
+              </p>
+            </article>
+            <article class="module-card cyan">
+              <span>9</span>
+              <h3>Community Forum & Banking Discussion Network</h3>
+              <p>
+                Ask, answer, discuss, share experience and build your
+                professional reputation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="for-whom" class="section audience-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Who Can Join?</p>
+            <h2>The Professional Network Built by Bankers, For Bankers</h2>
+          </div>
+          <div class="audience-grid">
+            <div>
+              <strong>Serving Bankers</strong>
+              <p>
+                Find experts, training, mentorship, career guidance and peer
+                discussions.
+              </p>
+            </div>
+            <div>
+              <strong>Retired Bankers</strong>
+              <p>
+                Continue your productive professional journey through advisory,
+                mentoring and training.
+              </p>
+            </div>
+            <div>
+              <strong>Consultants</strong>
+              <p>
+                Showcase expertise, publish knowledge and receive targeted
+                opportunities.
+              </p>
+            </div>
+            <div>
+              <strong>Trainers & Mentors</strong>
+              <p>
+                Create learning modules, mentorship tracks and professional
+                development programs.
+              </p>
+            </div>
+            <div>
+              <strong>Institutions</strong>
+              <p>
+                Access domain experts, advisory panels, training partners and
+                project teams.
+              </p>
+            </div>
+            <div>
+              <strong>Fintechs & NBFCs</strong>
+              <p>Connect with banking practitioners and domain specialists.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quick-register-section">
+        <div class="container quick-card">
+          <div>
+            <p class="eyebrow">Quick Registration</p>
+            <h2>Join now with minimum information</h2>
+            <p>
+              Register as an exploring member first. Complete your detailed role
+              profile later as Expert, Mentor, Trainer, Author, Banker Member or
+              Institutional User.
+            </p>
+          </div>
+          <button class="btn open-register">Start Quick Registration</button>
+        </div>
+      </section>
+
+      <section id="career" class="section career-section">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">Career & Opportunities</p>
+            <h2>Advance your banking career or build your second innings</h2>
+            <p>
+              Discover opportunities for employment, consulting, advisory,
+              independent director roles, training assignments, mentorship
+              programs and retirement transition opportunities.
+            </p>
+          </div>
+          <ul class="feature-list">
+            <li>Targeted opportunity circulation</li>
+            <li>Confidential career profile</li>
+            <li>Career progression assistant</li>
+            <li>Post-retirement transition support</li>
+            <li>Leadership and board opportunity network</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section roadmap-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Phased Launch Strategy</p>
+            <h2>Build community first, then scale marketplace engagement</h2>
+          </div>
+          <div class="roadmap">
+            <div>
+              <span>Phase 1</span>
+              <h3>Community & Knowledge</h3>
+              <p>
+                Forum, knowledge marketplace, expert directory and quick
+                registration.
+              </p>
+            </div>
+            <div>
+              <span>Phase 2</span>
+              <h3>Engagement Layer</h3>
+              <p>
+                Consultation, mentorship, training and career opportunities.
+              </p>
+            </div>
+            <div>
+              <span>Phase 3</span>
+              <h3>Institutional Layer</h3>
+              <p>
+                Project marketplace, advisory marketplace and institutional
+                memberships.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container cta-card">
+          <h2>
+            Join the movement. Share experience. Create impact. Grow together.
+          </h2>
+          <p>Become a founding member of Bankers Connect.</p>
+          <button class="btn open-register">Join Free</button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
         <div>
-          <h2>Preserving, sharing and monetising banking experience</h2>
-          <p>Bankers Connect is designed as a professional network where serving bankers, retired bankers, consultants, trainers, mentors, fintech professionals and institutions can collaborate, learn, advise and grow.</p>
+          <h3>Bankers Connect</h3>
+          <p>Connecting experience with opportunity.</p>
         </div>
-        <div class="highlight-box">
-          <h3>Why this platform?</h3>
-          <p>Banking expertise is highly specialised, but often scattered. This platform brings experience, opportunity, knowledge and collaboration into one trusted ecosystem.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="modules" class="section modules-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Our Platform Ecosystem</p>
-          <h2>9 Powerful Modules</h2>
-        </div>
-        <div class="modules-grid">
-          <article class="module-card blue"><span>1</span><h3>Expert Marketplace</h3><p>Discover and engage verified banking experts by domain, experience, expertise and location.</p></article>
-          <article class="module-card green"><span>2</span><h3>Knowledge Marketplace</h3><p>Access articles, templates, case studies, whitepapers, regulatory notes and banking artifacts.</p></article>
-          <article class="module-card purple"><span>3</span><h3>Mentorship Marketplace</h3><p>Connect with experienced mentors for career, leadership and domain-specific guidance.</p></article>
-          <article class="module-card orange"><span>4</span><h3>Training Marketplace</h3><p>Explore subject-wise and sub-subject-specific courses, capsules, workshops and primer modules.</p></article>
-          <article class="module-card teal"><span>5</span><h3>Consultation Marketplace</h3><p>Seek expert advice for specific operational, regulatory, technology or business issues.</p></article>
-          <article class="module-card red"><span>6</span><h3>Project Marketplace</h3><p>Post and discover banking projects, find expert teams and collaborate end-to-end.</p></article>
-          <article class="module-card indigo"><span>7</span><h3>Virtual Advisory Marketplace</h3><p>Build advisory panels, review boards, virtual PMOs and secure collaboration workspaces.</p></article>
-          <article class="module-card pink"><span>8</span><h3>Career & Opportunities Marketplace</h3><p>Explore jobs, consulting, advisory, board and post-retirement opportunities.</p></article>
-          <article class="module-card cyan"><span>9</span><h3>Community Forum & Banking Discussion Network</h3><p>Ask, answer, discuss, share experience and build your professional reputation.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="for-whom" class="section audience-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Who Can Join?</p>
-          <h2>The Professional Network Built by Bankers, For Bankers</h2>
-        </div>
-        <div class="audience-grid">
-          <div><strong>Serving Bankers</strong><p>Find experts, training, mentorship, career guidance and peer discussions.</p></div>
-          <div><strong>Retired Bankers</strong><p>Continue your productive professional journey through advisory, mentoring and training.</p></div>
-          <div><strong>Consultants</strong><p>Showcase expertise, publish knowledge and receive targeted opportunities.</p></div>
-          <div><strong>Trainers & Mentors</strong><p>Create learning modules, mentorship tracks and professional development programs.</p></div>
-          <div><strong>Institutions</strong><p>Access domain experts, advisory panels, training partners and project teams.</p></div>
-          <div><strong>Fintechs & NBFCs</strong><p>Connect with banking practitioners and domain specialists.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section quick-register-section">
-      <div class="container quick-card">
         <div>
-          <p class="eyebrow">Quick Registration</p>
-          <h2>Join now with minimum information</h2>
-          <p>Register as an exploring member first. Complete your detailed role profile later as Expert, Mentor, Trainer, Author, Banker Member or Institutional User.</p>
+          <strong>Connect only at</strong>
+          <a href="https://bankersconnect.in">https://bankersconnect.in</a>
+          <a href="mailto:vcs@bankersconnect.in">vcs@bankersconnect.in</a>
         </div>
-        <button class="btn open-register">Start Quick Registration</button>
-      </div>
-    </section>
-
-    <section id="career" class="section career-section">
-      <div class="container two-col">
         <div>
-          <p class="eyebrow">Career & Opportunities</p>
-          <h2>Advance your banking career or build your second innings</h2>
-          <p>Discover opportunities for employment, consulting, advisory, independent director roles, training assignments, mentorship programs and retirement transition opportunities.</p>
-        </div>
-        <ul class="feature-list">
-          <li>Targeted opportunity circulation</li>
-          <li>Confidential career profile</li>
-          <li>Career progression assistant</li>
-          <li>Post-retirement transition support</li>
-          <li>Leadership and board opportunity network</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="roadmap" class="section roadmap-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Phased Launch Strategy</p>
-          <h2>Build community first, then scale marketplace engagement</h2>
-        </div>
-        <div class="roadmap">
-          <div><span>Phase 1</span><h3>Community & Knowledge</h3><p>Forum, knowledge marketplace, expert directory and quick registration.</p></div>
-          <div><span>Phase 2</span><h3>Engagement Layer</h3><p>Consultation, mentorship, training and career opportunities.</p></div>
-          <div><span>Phase 3</span><h3>Institutional Layer</h3><p>Project marketplace, advisory marketplace and institutional memberships.</p></div>
+          <strong>Social & Direct</strong>
+          <a href="https://www.linkedin.com/in/vcsharma">LinkedIn: vcsharma</a>
+          <a href="tel:+919920047837">DM: +91 9920047837</a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section class="section cta-section">
-      <div class="container cta-card">
-        <h2>Join the movement. Share experience. Create impact. Grow together.</h2>
-        <p>Become a founding member of Bankers Connect.</p>
-        <button class="btn open-register">Join Free</button>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact" class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Bankers Connect</h3>
-        <p>Connecting experience with opportunity.</p>
-      </div>
-      <div>
-        <strong>Connect only at</strong>
-        <a href="https://bankersconnect.in">https://bankersconnect.in</a>
-        <a href="mailto:vcs@bankersconnect.in">vcs@bankersconnect.in</a>
-      </div>
-      <div>
-        <strong>Social & Direct</strong>
-        <a href="https://www.linkedin.com/in/vcsharma">LinkedIn: vcsharma</a>
-        <a href="tel:+919920047837">DM: +91 9920047837</a>
+    <div class="modal" id="registerModal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close registration form">
+          ×
+        </button>
+        <h2>Quick Registration</h2>
+        <p>
+          Join as an exploring member. Detailed profile can be completed later.
+        </p>
+        <form id="quickRegisterForm">
+          <label>Full Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Mobile<input type="tel" name="mobile" required /></label>
+          <label
+            >Current Status
+            <select name="status" required>
+              <option value="">Select</option>
+              <option>Serving Banker</option>
+              <option>Retired Banker</option>
+              <option>Consultant</option>
+              <option>Trainer / Mentor</option>
+              <option>Institution Representative</option>
+              <option>Student / Young Professional</option>
+            </select>
+          </label>
+          <label class="checkbox"
+            ><input type="checkbox" required /> I confirm that I am joining
+            Bankers Connect to explore the platform and shall provide further
+            information when upgrading to full membership.</label
+          >
+          <button class="btn" type="submit">Submit Interest</button>
+        </form>
+        <p class="form-note" id="formNote"></p>
       </div>
     </div>
-  </footer>
 
-  <div class="modal" id="registerModal" aria-hidden="true">
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close registration form">×</button>
-      <h2>Quick Registration</h2>
-      <p>Join as an exploring member. Detailed profile can be completed later.</p>
-      <form id="quickRegisterForm">
-        <label>Full Name<input type="text" name="name" required /></label>
-        <label>Email<input type="email" name="email" required /></label>
-        <label>Mobile<input type="tel" name="mobile" required /></label>
-        <label>Current Status
-          <select name="status" required>
-            <option value="">Select</option>
-            <option>Serving Banker</option>
-            <option>Retired Banker</option>
-            <option>Consultant</option>
-            <option>Trainer / Mentor</option>
-            <option>Institution Representative</option>
-            <option>Student / Young Professional</option>
-          </select>
-        </label>
-        <label class="checkbox"><input type="checkbox" required /> I confirm that I am joining Bankers Connect to explore the platform and shall provide further information when upgrading to full membership.</label>
-        <button class="btn" type="submit">Submit Interest</button>
-      </form>
-      <p class="form-note" id="formNote"></p>
-    </div>
-  </div>
+    <script src="script.js"></script>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle?.addEventListener("click", () =>
+        navLinks.classList.toggle("open"),
+      );
 
-  <script src="script.js"></script>
-   <script>
-   const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-menuToggle?.addEventListener('click', () => navLinks.classList.toggle('open'));
+      const modal = document.getElementById("registerModal");
+      const openButtons = document.querySelectorAll(".open-register");
+      const closeButton = document.querySelector(".modal-close");
+      openButtons.forEach((btn) =>
+        btn.addEventListener("click", () => {
+          modal.classList.add("open");
+          modal.setAttribute("aria-hidden", "false");
+        }),
+      );
+      closeButton?.addEventListener("click", closeModal);
+      modal?.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+      });
+      function closeModal() {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+      }
 
-const modal = document.getElementById('registerModal');
-const openButtons = document.querySelectorAll('.open-register');
-const closeButton = document.querySelector('.modal-close');
-openButtons.forEach(btn => btn.addEventListener('click', () => {
-  modal.classList.add('open');
-  modal.setAttribute('aria-hidden', 'false');
-}));
-closeButton?.addEventListener('click', closeModal);
-modal?.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-function closeModal(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); }
-
-document.getElementById('quickRegisterForm')?.addEventListener('submit', function(e){
-  e.preventDefault();
-  const data = Object.fromEntries(new FormData(this).entries());
-  localStorage.setItem('bankersConnectQuickRegistration', JSON.stringify({...data, submittedAt:new Date().toISOString()}));
-  document.getElementById('formNote').textContent = 'Thank you. Your interest has been captured in this demo build. Connect with vcs@bankersconnect.in for onboarding.';
-  this.reset();
-});
-
-   </script>
-</body>
+      document
+        .getElementById("quickRegisterForm")
+        ?.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = Object.fromEntries(new FormData(this).entries());
+          localStorage.setItem(
+            "bankersConnectQuickRegistration",
+            JSON.stringify({ ...data, submittedAt: new Date().toISOString() }),
+          );
+          document.getElementById("formNote").textContent =
+            "Thank you. Your interest has been captured in this demo build. Connect with vcs@bankersconnect.in for onboarding.";
+          this.reset();
+        });
+    </script>
+  </body>
 </html>
- 
